@@ -31,3 +31,8 @@ nav a:hover {
     color: darkgray;
     transform: scale(1.2);
 }
+
+button {
+    background-color: gray;
+    color: white;
+}
