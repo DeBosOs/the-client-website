@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,9 +12,11 @@ body {
 header {
     background-color: yellow;
     padding: 1%;
+    position: sticky;
+    top: 0;
 }
 
-nav {
+ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,15 +32,38 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+nav a:hover{
+    color: darkgray;
+}
+
+li {
+    list-style-type: none;
     transition-duration: .5s;
 }
 
-nav a:hover {
-    color: darkgray;
+li:hover {
+    color: darkgray;  
     transform: scale(1.2);
 }
 
 button {
     background-color: gray;
     color: white;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+form {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inputBar {
+    width: 20%;
 }

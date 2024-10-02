@@ -9,15 +9,17 @@
 <body>
     <header>
         <nav>
-            <img id="logo" src="images/Qatar_logo.png" alt="logo">
-            <a href="Stories"> Stories</a>
-            <a href="What's on"> What's on</a>
-            <a href="Collection"> Collection</a>
-            <a href="Visit"> Visit</a>
-            <a href="Tickets"> Tickets</a>
-            <a href="Members"> Members</a>
-            <a href="Venues"> Venues</a>
-        </nav>
+            <ul>
+                <li><img id="logo" src="images/Qatar_logo.png" alt="logo"></li>
+                <li><a href="Stories"> Stories</a></li>
+                <li><a href="What's on"> What's on</a></li>
+                <li><a href="Collection"> Collection</a></li>
+                <li><a href="Visit"> Visit</a></li>
+                <li><a href="Tickets"> Tickets</a></li>
+                <li><a href="Members"> Members</a></li>
+                <li><a href="Venues"> Venues</a></li>
+            </ul>
+            </nav>
     </header>
     <main>
         <!-- dit moet de API doen -->
@@ -42,17 +44,19 @@
         <img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">
+        <div class="knoppen"></div>
 
-        <button>All objects</button>
-        <button>POTTERY</button>
-        <button>Islamic ART</button>
-        <button>TAPESTRY</button>
-        <button>GlASS</button>
 
-        <div id="inputBar">
-            <label for="search">Search the collection</label>
-            <input type="search" id="search">
-        </div>
+        <form>
+            <button>All objects</button>
+            <button>POTTERY</button>
+            <button>Islamic ART</button>
+            <button>TAPESTRY</button>
+            <button>GlASS</button>
+            <div class="inputBar">
+                <input type="search" id="search" placeholder="Search the collection">
+            </div>
+        </form>
     </main>
 </body>
 </html>
