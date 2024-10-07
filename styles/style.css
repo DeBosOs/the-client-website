@@ -65,11 +65,11 @@ form {
 }
 
 .inputBar {
-    width: 100%; /* Adjust width, no need for 250% */
-    max-width: 500px; /* Limit the maximum width if desired */
-    height: 50px; /* Keep the height as per your preference */
-    margin: 10px auto; /* Centers the inputBar */
-    position: relative; /* Make sure it doesn't interfere with the form's fixed positioning */
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    margin: 10px auto;
+    padding: 25px;
 }
 
 .inputBar input {
