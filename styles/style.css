@@ -10,10 +10,12 @@ body {
 }
 
 header {
-    background-color: yellow;
+    background-color: white;
     padding: 1%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    border-bottom: 2px solid;
+    width: 100%;
 }
 
 header nav img {
@@ -21,7 +23,7 @@ header nav img {
     height: auto;
 }
 
-ul {
+header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +40,7 @@ nav a:hover {
     color: darkgray;
 }
 
-li {
+header nav ul li {
     list-style-type: none;
     transition-duration: .5s;
 
@@ -46,6 +48,15 @@ li {
         color: darkgray;
         transform: scale(1.2);
     }
+}
+
+main {
+    margin-top: 7%;
+    column-count: 7;
+}
+
+main ul {
+    list-style-type: none;
 }
 
 button {
@@ -62,6 +73,10 @@ form {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+form button {
+    align-items: center;
 }
 
 .inputBar {
