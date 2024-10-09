@@ -12,7 +12,7 @@ body {
 header {
     background-color: white;
     padding: 1%;
-    position: fixed;
+    position: sticky;
     top: 0;
     border-bottom: 2px solid;
     width: 100%;
@@ -51,12 +51,13 @@ header nav ul li {
 }
 
 main {
-    margin-top: 7%;
     column-count: 7;
 }
 
 main ul {
     list-style-type: none;
+    display: block;
+    object-fit: contain;
 }
 
 button {
