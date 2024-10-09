@@ -14,13 +14,13 @@ De instructie van deze leertaak staan in de [INSTRUCTIONS.md](https://github.com
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
-
+In dit project maak ik een soort homepage voor Qatar Museum. Op deze pagina zijn de kunstwerken van het museum te zien. Ook kun je deze filteren of specifieke kunstwerken opzoeken. Uiteraard kan je via de pagina ook door linken naar de andere pagina's van Qatar Museum
+<!-- Link naar de pagina (tot nu toe) 🌐-->
+https://debosos.github.io/the-client-website/
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-
+De pagina start met een header. Deze zal altijd bovenaan je scherm blijven staat (scrollt dus niet mee). Verder staan de kunstwerken in een multi-column-layout (plaatjes moeten nog toegevoegd worden).
+De knoppen van de filters en de zoekbalk staan ook altijd fixed op je scherm. Door over deze filters te hoveren moeten de kunstwerken die hier niet bij passen een lagere opacity krijgen. (door middel van eventlistener en jquery)
 
 
 ## Licentie
