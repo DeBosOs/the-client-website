@@ -50,14 +50,18 @@ header nav ul li {
     }
 }
 
-main {
-    column-count: 7;
+.plaatjes {
+    columns: 5 75px;
 }
 
-main ul {
+main .plaatjes ul li {
+    background: blue;
+    break-inside: avoid;
     list-style-type: none;
-    display: block;
-    object-fit: contain;
+}
+
+main .plaatjes ul li img {
+    max-width: 100%;
 }
 
 button {
