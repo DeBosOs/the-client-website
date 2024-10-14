@@ -62,6 +62,7 @@ main .plaatjes ul li {
 
 main .plaatjes ul li img {
     width: 100%;
+    display: block;
 }
 
 button {
