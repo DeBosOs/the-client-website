@@ -51,17 +51,17 @@ header nav ul li {
 }
 
 .plaatjes {
-    columns: 5 75px;
+    columns: 8 75px;
+    gap: 0;
 }
 
 main .plaatjes ul li {
-    background: blue;
     break-inside: avoid;
     list-style-type: none;
 }
 
 main .plaatjes ul li img {
-    max-width: 100%;
+    width: 100%;
 }
 
 button {
