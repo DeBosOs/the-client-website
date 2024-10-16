@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 header {
     background-color: white;
     padding: 1%;
@@ -100,9 +95,8 @@ main {
 }
 
 main img {
-    flex: 1 1 calc(100% / 7);
+    /* flex: 1 1 calc(100% / 7); */
     margin: 0;
-    padding: 0;
-    display: inline-block;
-    height: auto;
+    padding: 10px;
+    width: auto;
 }

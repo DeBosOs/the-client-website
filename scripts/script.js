@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     const images = [
         'images/kunstwerk_1.jpeg',
         'images/kunstwerk_2.jpeg',
@@ -14,25 +14,25 @@ window.onload = function() {
     }
 
     function plaatjeRow() {
-        for (let index = 0; index < 7; index++) { 
+        for (let index = 0; index < 7; index++) {
             const img = randomPlaatje();
             const imgEl = createImageElement(img);
             main.appendChild(imgEl); //
         }
     }
 
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 12; index++) {
         plaatjeRow();
     }
 
     function createImageElement(img) {
         const imgEl = document.createElement('img');
         imgEl.setAttribute('src', img);
-        imgEl.setAttribute('width', 200);
+        imgEl.setAttribute('height', 350);
         return imgEl;
     }
 
-    window.addEventListener('scroll', function(event) {
+    window.addEventListener('scroll', function (event) {
         const scrolledY = window.scrollY;
         const pageHeight = document.documentElement.scrollHeight;
 
