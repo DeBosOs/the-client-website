@@ -7,6 +7,8 @@ window.onload = function() {
 
     const viewportHeight = document.documentElement.clientHeight;
 
+    const main = document.querySelector('main');
+
     function randomPlaatje() {
         return images[Math.floor(Math.random() * images.length)];
     }
@@ -19,9 +21,6 @@ window.onload = function() {
         }
     }
 
-    const main = document.querySelector('main');
-
-    // Initial rows of images
     for (let index = 0; index < 5; index++) {
         plaatjeRow();
     }

@@ -50,21 +50,6 @@ header nav ul li {
     }
 }
 
-/* main {
-    height: 1000px;
-} */
-
-/* .container {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.container>img {
-    flex: 1 21%;
-} */
-
 button {
     background-color: gray;
     color: white;
@@ -118,6 +103,6 @@ main img {
     flex: 1 1 calc(100% / 7);
     margin: 0;
     padding: 0;
-    display: block;
+    display: inline-block;
     height: auto;
 }
