@@ -107,13 +107,17 @@ form button {
     width: 100%;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
-    gap: 0; /* Removes all gaps between images */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-img {
-    width: 100%; /* Ensure images fill their grid cells */
-    display: block; /* Remove any extra space around the images */
+main img {
+    flex: 1 1 calc(100% / 7);
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: auto;
 }

@@ -1,40 +1,31 @@
 window.onload = function() {
-
     const images = [
         'images/kunstwerk_1.jpeg',
         'images/kunstwerk_2.jpeg',
         'images/kunstwerk_3.jpeg',
     ];
-    
-    const viewportHeight = document.documentElement.clientHeight;
 
-    function createContainer() {
-        const section = document.createElement('section');
-        section.setAttribute('class', 'container');
-        return section;
-    }
+    const viewportHeight = document.documentElement.clientHeight;
 
     function randomPlaatje() {
         return images[Math.floor(Math.random() * images.length)];
     }
 
     function plaatjeRow() {
-        const section = createContainer();
-        
-        for (let index = 0; index < 7; index++) {
+        for (let index = 0; index < 7; index++) { 
             const img = randomPlaatje();
             const imgEl = createImageElement(img);
-            section.appendChild(imgEl);
+            main.appendChild(imgEl); //
         }
-        return section;
     }
-    
+
     const main = document.querySelector('main');
 
+    // Initial rows of images
     for (let index = 0; index < 5; index++) {
-        main.appendChild(plaatjeRow());
+        plaatjeRow();
     }
-    
+
     function createImageElement(img) {
         const imgEl = document.createElement('img');
         imgEl.setAttribute('src', img);
@@ -46,14 +37,10 @@ window.onload = function() {
         const scrolledY = window.scrollY;
         const pageHeight = document.documentElement.scrollHeight;
 
-        console.log(scrolledY);
-
         const scrolledToEnd = (scrolledY + viewportHeight) >= pageHeight;
 
-        console.log(scrolledToEnd);
-        
-        if(scrolledToEnd){
-            main.appendChild(plaatjeRow());
+        if (scrolledToEnd) {
+            plaatjeRow();
         }
     });
 }
