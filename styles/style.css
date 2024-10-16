@@ -50,20 +50,20 @@ header nav ul li {
     }
 }
 
-.plaatjes {
-    columns: 6 75px;
-    gap: 0;
+/* main {
+    height: 1000px;
+} */
+
+/* .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-main .plaatjes ul li {
-    break-inside: avoid;
-    list-style-type: none;
-}
-
-main .plaatjes ul li img {
-    width: 100%;
-    display: block;
-}
+.container>img {
+    flex: 1 21%;
+} */
 
 button {
     background-color: gray;
@@ -98,4 +98,22 @@ form button {
     height: 100%;
     padding: 10px;
     font-size: 16px;
+}
+
+.section {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns */
+    gap: 0; /* Removes all gaps between images */
+}
+
+img {
+    width: 100%; /* Ensure images fill their grid cells */
+    display: block; /* Remove any extra space around the images */
 }
