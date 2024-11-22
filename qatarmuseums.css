@@ -1,0 +1,397 @@
+/* Schrijf hier de verschillende stijlen, die gedeeld gaan
+   worden door jullie projecten */
+
+/* ****** */
+/* COLORS */
+/* ****** */
+
+:root {
+    /* Background colors */
+    --primary-background-color: #ffff;
+    --secondary-background-color: #ffe40c;
+
+    /* Button colors */
+    --primary-button: #f9ff1e;
+    --primary-hover-button: #000;
+
+    /* Accent colors */
+    --accent-color-blue: #78aaf9;
+    --accent-color-grey: #464646;
+    --accent-color-orange: #F6C343;
+
+    /* Text colors */
+    --primary-text-color: #000;
+    --secondary-text-color: #fffdfd;
+
+}
+
+.primary-background-color {
+    background-color: #ffff
+}
+
+.secondary-background-color {
+    background-color: #ffe40c
+}
+
+.primary-button {
+    background-color: #f9ff1e;
+}
+
+.primary-hover-button {
+    background-color: #000;
+}
+
+.accent-color-blue {
+    background-color: #78aaf9;
+}
+
+.accent-color-grey {
+    background-color: #464646;
+}
+
+.accent-color-orange {
+    background-color: #F6C343;
+}
+
+.primary-text-color {
+    background-color: #000;
+}
+
+.secondary-text-color {
+    background-color: #fffdfd;
+}
+
+/* ********** */
+/* TYPOGRAPHY */
+/* ********** */
+
+/* Font import */
+@font-face {
+    font-family: 'DIN Next LT Pro Webfont';
+    src: url("fonts/DIN\ Next\ LT\ Pro\ Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Webfont';
+    src: url("fonts/din-next-lt-arabic-regular.ttf") format("truetype");
+}
+
+/* General styles */
+body {
+    --primary-font: 'DIN Next LT Pro Webfont', sans-serif;
+    --primary-font-ar: 'DIN Next LT Arabic Webfont', sans-serif;
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    font-family: var(--primary-font);
+}
+
+*:lang(ar) {
+    font-family: var(--primary-font-ar);
+    text-align: right;
+}
+
+/* Headings */
+.header-xl,
+.header-m,
+.header-s,
+.button-link,
+.button,
+nav {
+    text-transform: uppercase;
+}
+
+.header-xl {
+    /* h1 */
+    font-size: 3.75rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.05em;
+    line-height: 1em;
+}
+
+@media (min-width: 800px) {
+    .header-xl {
+        font-size: 5rem;
+    }
+}
+
+.header-l {
+    /* h2 */
+    font-size: 1.875rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.04em;
+    line-height: 1.1em;
+}
+
+@media (min-width: 800px) {
+    .header-l {
+        font-size: 2.25rem;
+        line-height: 0.95em;
+    }
+}
+
+.header-m {
+    /* h3 */
+    font-size: 1.625rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+
+@media (min-width: 800px) {
+    .header-m {
+        font-size: 1.875rem;
+    }
+}
+
+.header-s {
+    /* h4 */
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+
+.header-xs {
+    /* h5 */
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.1em;
+}
+
+/* Texts */
+.text {
+    /* p */
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
+
+.text-quote {
+    /* blockquote */
+    font-size: 2rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+@media (min-width: 800px) {
+    .text-quote {
+        font-size: 3.125rem;
+        line-height: 1.15em;
+    }
+}
+
+.text-introduction {
+    font-size: 1.77rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+.text-caption,
+.text-tag {
+    font-size: 1rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
+
+.text-field-label {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 0;
+    line-height: 2rem;
+}
+
+.text-filter-dropdown {
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-light);
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+}
+
+/* Links */
+.link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.link-paragraph {
+    text-decoration: underline;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link-button {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: -0.02em;
+    line-height: 2rem;
+}
+
+.link-footer-bar {
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
+    line-height: 1.25rem;
+    color: inherit;
+}
+
+@media (min-width: 800px) {
+    .link-footer-bar {
+        font-size: 1.25rem;
+    }
+}
+
+/* Display styles */
+.text-ticker-bar {
+    font-size: calc(1.75 * 3.75rem);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: -0.04em;
+    line-height: 1.1em;
+}
+
+/* ******************* */
+/* FORMULIER ELEMENTEN */
+/* ******************* */
+
+.table {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-collapse: collapse;
+    border-color: #000;
+    border-width: 0;
+    border-spacing: 2px;
+}
+
+/* Lists*/
+.vertical-list {
+    display: block;
+    border-width: 0;
+    box-sizing: border-box;
+    margin-block: 0;
+    color: var(--color-black);
+}
+
+.horizontal-list {
+    display: flex;
+    flex: 0 1 auto;
+    font-size: 0;
+    list-style: none;
+    padding-block: 1.5rem; 
+    padding-inline: 0; 
+    position: relative;
+    text-align: left;
+    color: var(--color-black);
+}
+
+.input-forms {
+    font-family: var(--paragraph-font-family);
+    padding-block-start: 23px;
+    position: relative;
+    font-feature-settings: var(--paragraph-font-feature-settings);
+    font-size: var(--paragraph-font-size);
+    font-style: var(--paragraph-font-style);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.5em;
+}
+
+/* Buttons */
+.button {
+    /* Typography */
+    --button-font-size: 1rem;
+    --button-letter-spacing: -0.02em;
+    --button-line-height: 2rem;
+
+    font-family: var(--primary-font);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--button-letter-spacing);
+    line-height: var(--button-line-height);
+
+    /* Removes default button styling */
+    border-block-end: 1px solid transparent;
+    border-block-start: 1px solid transparent;
+    border-inline-end: 1px solid transparent;
+    border-inline-start: 1px solid transparent;
+    border-radius: 0;
+    border-color: var(--primary-hover-button);
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Sizing and positioning */
+    max-width: min(100%, 320px);
+    min-width: 100px;
+    padding-block: 0.8rem 0.8rem;
+    padding-inline: 1rem 1rem;
+    text-align: center;
+
+    transition: all 350ms ease-out;
+}
+
+.button-primary {
+    background-color: var(--primary-button);
+    color: var(--primary-text-color);
+
+    &:hover {
+        background-color: var(--primary-hover-button);
+        color: var(--secondary-text-color);
+    }
+}
+
+.button-outline {
+    background-color: transparent;
+    color: var(--primary-text-color);
+
+    &:hover {
+        background-color: var(--primary-hover-button);
+        color: var(--secondary-text-color);
+    }
+}
+
+/* Checkboxes */
+.checkbox-label {
+    /* Positioning */
+    display: inline-flex;
+    align-items: center;
+
+    /* Cursor */
+    cursor: pointer;
+}
+
+.checkbox {
+    /* Sizing and positioning */
+    box-sizing: border-box;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: .5rem;
+    padding: 0;
+
+    /* Appearance */
+    appearance: none;
+    box-shadow: 0 0 0 1px var(--accent-color-grey);
+    border: 2px solid white;
+    transition: 1.5s ease-in-out;
+}
+
+.checkbox:checked {
+    padding: 2px;
+    background-color: var(--accent-color-grey)
+}
+
+/* Radio buttons */
+
+.radio {}
